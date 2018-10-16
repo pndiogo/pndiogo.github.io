@@ -1,0 +1,81 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  height: 100vh;
+  background: #eee;
+  color: #2e3d48;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90vh;
+  padding: 0 3rem;
+  /* margin-top: -50px; */
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 200;
+  margin: 0.4rem;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4rem;
+  color: #2e3d48;
+}
+
+h3 {
+  font-size: 2rem;
+  color: #aaa;
+}
+
+/* Footer */
+footer {
+  margin-top: 3rem;
+}
+
+footer .fab {
+  margin: 0.4rem;
+}
+
+footer a {
+  color: #2e3d48;
+  transition: all 0.2s ease-out;
+}
+
+footer a:hover {
+  color: rgb(86, 84, 116);
+  cursor: pointer;
+}
+
+/* Cursor */
+.txt-type .txt {
+  padding-right: 3px;
+  color: rgb(86, 84, 116);
+}
+
+.blinking-cursor {
+  color: rgb(86, 84, 116);
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    color: rgb(86, 84, 116);
+  }
+  50% {
+    color: transparent;
+  }
+}
